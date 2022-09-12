@@ -6,7 +6,22 @@ public class RestaurantService {
     private static List<Restaurant> restaurants = new ArrayList<>();
 
     public Restaurant findRestaurantByName(String restaurantName){
-        return null;
+        //return null;
+        List<Restaurant> lstResturant;
+        lstResturant = getRestaurants();
+        // Restaurant rst = new Restaurant;
+
+             for (Restaurant rst : lstResturant)
+             {
+                 if(rst.getName()==restaurantName)
+                 {
+                     return rst;
+                 }
+             }
+
+             //restaurantNotFoundException rstNtFnd = new restaurantNotFoundException(restaurantName);
+        //rst = rstNtFnd();
+        return null ;
         //DELETE ABOVE STATEMENT AND WRITE CODE HERE
     }
 

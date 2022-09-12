@@ -1,7 +1,6 @@
 import java.time.LocalDateTime;
 import java.time.LocalTime;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class Restaurant {
     private String name;
@@ -18,14 +17,28 @@ public class Restaurant {
     }
 
     public boolean isRestaurantOpen() {
-        return true;
+        //return true;
+        LocalTime CurrentTime;
+        CurrentTime = getCurrentTime();
+
+        if(CurrentTime.isAfter(closingTime))
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+
         //DELETE ABOVE STATEMENT AND WRITE CODE HERE
     }
 
     public LocalTime getCurrentTime(){ return  LocalTime.now(); }
 
     public List<Item> getMenu() {
-        return null;
+        List<Item> lstItems = new ArrayList<>();
+        return lstItems;
+
         //DELETE ABOVE RETURN STATEMENT AND WRITE CODE HERE
     }
 

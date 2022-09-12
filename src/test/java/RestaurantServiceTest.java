@@ -1,6 +1,8 @@
 import org.junit.jupiter.api.*;
 
 import java.time.LocalTime;
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -16,12 +18,23 @@ class RestaurantServiceTest {
     @Test
     public void searching_for_existing_restaurant_should_return_expected_restaurant_object() throws restaurantNotFoundException {
         //WRITE UNIT TEST CASE HERE
+        // List<Restaurant> lstResturantts = new ArrayList<>();
+        // restaurant = service.addRestaurant("Bawarchi","Hyderabad", LocalTime.of(10,00,00),LocalTime.of(22,00,00));
+         //lstResturantts.add(restaurant);
+         //assertEquals(restaurant,service.findRestaurantByName(restaurant.getName()));
+
+
     }
 
     //You may watch the video by Muthukumaran on how to write exceptions in Course 3: Testing and Version control: Optional content
     @Test
     public void searching_for_non_existing_restaurant_should_throw_exception() throws restaurantNotFoundException {
         //WRITE UNIT TEST CASE HERE
+        //restaurant = service.addRestaurant("Bawarchi","Hyderabad", LocalTime.of(10,00,00),LocalTime.of(22,00,00));
+       //stResturantts.add(restaurant);
+        //Restaurant objResturant = new Restaurant("");
+
+        //assertEquals(null,service.findRestaurantByName("Paradise"));
     }
     //<<<<<<<<<<<<<<<<<<<<SEARCHING>>>>>>>>>>>>>>>>>>>>>>>>>>
 
